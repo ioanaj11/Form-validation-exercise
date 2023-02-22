@@ -1,0 +1,83 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(90, 117, 126);
+    color: #333;
+    font: 1.1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+    height:100%;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px double;
+    border-radius: 30px;
+    border-color: rgb(88, 86, 86);
+    background-color: antiquewhite;
+    padding: 10px 30px;
+  }
+
+  ul{
+    list-style: none;
+     }
+
+  li{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding-bottom: 10px;
+    grid-gap: 10px;
+    }
+
+  li>div{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+  }
+
+  input, select{
+    border-radius: 5px;
+    font-size: 0.8em;
+    background-color: white;
+  }
+
+  input:invalid{
+    border-color: rgb(197, 100, 100);
+    background-color: rgb(241, 193, 193);
+  }
+
+  input:focus:invalid{
+    outline: none;
+  }
+
+  button{
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: rgb(70, 121, 138);
+    color: antiquewhite;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+ .error {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 0.8em;
+    color:  rgb(197, 100, 100);
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
